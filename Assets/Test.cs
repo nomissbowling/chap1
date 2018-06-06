@@ -37,6 +37,14 @@ public class Test : MonoBehaviour {
     ppos.x += 8.0f;
     ppos.y += 5.0f;
     Debug.Log(ppos);
+
+    Vector2 sp = new Vector2(2.0f, 1.0f);
+    Vector2 ep = new Vector2(8.0f, 5.0f);
+    Vector2 dir = ep - sp;
+    Debug.Log(dir);
+
+    float len = dir.magnitude;
+    Debug.Log(len);
   }
 
   // Update is called once per frame

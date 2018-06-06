@@ -32,6 +32,11 @@ public class Test : MonoBehaviour {
     Player p = new Player();
     p.Attack();
     p.Damage(30);
+
+    Vector2 ppos = new Vector2(3.0f, 4.0f);
+    ppos.x += 8.0f;
+    ppos.y += 5.0f;
+    Debug.Log(ppos);
   }
 
   // Update is called once per frame

@@ -7,6 +7,20 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
+public class Player {
+  private int hp = 100;
+  private int power = 50;
+
+  public void Attack(){
+    Debug.Log(power + " send damages.");
+  }
+
+  public void Damage(int damage){
+    hp -= damage;
+    Debug.Log(damage + " receive damages.");
+  }
+}
+
 public class Test : MonoBehaviour {
   int cnt;
 
@@ -14,6 +28,10 @@ public class Test : MonoBehaviour {
   void Start(){
     Debug.Log("Hello, world! 日本語UTF8");
     cnt = 0;
+
+    Player p = new Player();
+    p.Attack();
+    p.Damage(30);
   }
 
   // Update is called once per frame

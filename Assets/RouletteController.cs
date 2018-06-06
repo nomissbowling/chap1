@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class RouletteController : MonoBehaviour {
-  float rotSpeed = 0.0f;
+  float rotSpeed = .0f;
 
   void Start(){
   }
@@ -18,5 +18,6 @@ public class RouletteController : MonoBehaviour {
       rotSpeed = 10.0f;
     }
     transform.Rotate(0, 0, rotSpeed);
+    rotSpeed *= .98f;
   }
 }

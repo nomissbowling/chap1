@@ -22,12 +22,10 @@ public class Player {
 }
 
 public class Test : MonoBehaviour {
-  int cnt;
+  int cnt = 0;
 
-  // Use this for initialization
   void Start(){
     Debug.Log("Hello, world! 日本語UTF8");
-    cnt = 0;
 
     Player p = new Player();
     p.Attack();
@@ -47,7 +45,6 @@ public class Test : MonoBehaviour {
     Debug.Log(len);
   }
 
-  // Update is called once per frame
   void Update(){
     string s = "日本語";
     ++cnt;
